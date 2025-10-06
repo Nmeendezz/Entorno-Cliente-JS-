@@ -1,0 +1,92 @@
+*{
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+body{
+    background-color: #121212;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header{
+    background-color: #1f1f1f;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+    background-color: #2c2c2c;
+    padding: 10px;
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: #121212;
+}
+
+section{
+    background-color: #181818;
+    padding: 20px;
+    margin: 20px;
+}
+
+div{
+    padding: 10px;
+    margin: 20px;
+}
+
+table, th, td{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    font-size: x-large;
+}
+
+#tablaHorario{
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+form tr td{
+    border: none;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+input, textarea{
+    color: #1f1f1f;
+}
+
+#submitButton{
+    color: #ffffff;
+    background-color: #1f1f1f;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejemplo</title>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Desarrollo web en entorno cliente</h1>
+        <img src="logo.png" alt="Cargando imagen" id="logo">
+    </header>   
+    <nav>
+        <a href="#inicio">Ir a Inicio</a>
+        <a href="#biografia">Ir a Biografía</a>
+        <a href="#habilidades">Ir a Habilidades</a>
+        <a href="#horario">Ir a Horario</a>
+        <a href="#formulario">Ir a Formulario</a>
+    </nav>
+    <section>
+        <h1 id="biografia">Biografía</h1>
+        <p> 
+            Soy un estudiante de 2do grado de DAW, 
+            hice bachillerato cientifico y me presente 
+            a la EVAU pero no me dio la nota para la carrera
+            de ingenieria informatica. Ahora espero presentarme 
+            el año que viene para la EVAU de fisica y matematicas.
+            Tambien practico el deporte de ultimate 
+            frisbee, he ido a concentraciones con la seleccion
+            española sub24 masculina, he ido a campeonatos
+            de españa y demas torneos alrededor de toda España. 
+        </p>
+    </section>
+    <div>
+        <h1 id="habilidades">Habilidades:</h1>
+        <p>Mis habilidades aprendidas en DAW son:</p>
+        <ul>
+            <li>Trabajar en equipo</li>
+            <li>Programar con Java</li>
+            <li>Bases de datos en SQL</li>
+            <li>Un poco de HTML y CSS</li>
+        </ul>
+        <br>
+        <h1 id="horario">Horario:</h1>
+        <table id="tablaHorario">
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>Desarrollo web entorno servidor</td>
+                <td>Desarrollo de aplicaciones web</td>
+                <td>Ingles</td>
+                <td>FOL</td>
+                <td>Desarrollo web entorno cliente</td>
+            </tr>
+            <tr>
+                <td>Desarrollo web entorno cliente</td>
+                <td>Arquitectura en la nube</td>
+                <td>Desarrollo web entorno cliente</td>
+                <td>Desarrollo web entorno servidor</td>
+                <td>Diseño de interfaz web</td>
+            </tr>
+            <tr>
+                <td>Ingles</td>
+                <td>Desarrollo web entorno servidor</td>
+                <td>Desarrollo de aplicaciones web</td>
+                <td>Arquitectura en la nube</td>
+                <td>Desarrollo web entorno servidor</td>
+            </tr>
+        </table>
+        <br>
+        <h1 id="formulario">Formulario:</h1>
+        <form>    
+            <table>
+                <tr>
+                    <td><label for="name">Nombre</label><br></td>
+                    <td><input type="text" name="name" id="name" placeholder="Name"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label><br></td>
+                    <td><input type="email" name="email" id="email" placeholder="Email"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="mensaje">Mensaje</label><br></td>
+                    <td><textarea name="mensaje" id="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea></td> 
+                    <td><input id="submitButton" type="submit" name="submit" value="Enviar"></td>
+                </tr>
+            </table>
+            <br>
+        </form>
+    </div>
+    <footer>
+        <p>Nicolas Mendez</p>
+        <p>nicolasmarin2006@hotmail.com</p>
+    </footer>
+</body>
+</html>
