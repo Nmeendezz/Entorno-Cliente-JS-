@@ -98,15 +98,15 @@ for (let i = 0; i < size; i++) {
     }
 }
 alert("La media de las notas aprobadas es " + sum / cont);
-
+*/
 
 //Ejercicio 4
 let numbers = [];
 for (let i = 0; i < 10; i++) {
     numbers[i] = Number(prompt("Introduce un numero"));
 }
-for (let i = 0; i < numbers.length; i++) {
-    for (let j = 0; j < numbers.length - 1; j++) {
+for (let i = 0; i < numbers.length / 2 + 1; i++) {
+    for (let j = 0; j < numbers.length; j++) {
         if (numbers[j] > numbers[j + 1]) {
             let num = numbers[j];
             numbers[j] = numbers[j + 1];
@@ -116,7 +116,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 alert("Los numeros introducidos son " + numbers);
-
+/*
 
 //Ejercicio 5
 let arr1 = [1, 2, 3, 4, 5];
