@@ -105,8 +105,8 @@ let numbers = [];
 for (let i = 0; i < 10; i++) {
     numbers[i] = Number(prompt("Introduce un numero"));
 }
-for (let i = 0; i < numbers.length / 2 + 1; i++) {
-    for (let j = 0; j < numbers.length; j++) {
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length - 1 - i; j++) {
         if (numbers[j] > numbers[j + 1]) {
             let num = numbers[j];
             numbers[j] = numbers[j + 1];
