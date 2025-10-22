@@ -18,8 +18,8 @@ for (let i = 0; i < numbers.length; i++) {
 
 alert("Los numeros introducidos son " + numbers);
 
-
-//Ejercicio 2
+*/
+//Ejercicio 5
 let option;
 let users = [];
 do {
@@ -68,7 +68,7 @@ do {
     }
 } while (option != 3);
 
-
+/*
 // Ejercicio 3 (con array)
 let size = Number(prompt("Cuantas notas va a ingresar?"));
 let grades = [];
