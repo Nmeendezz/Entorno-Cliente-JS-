@@ -119,4 +119,4 @@ let text = "";
 for (const x of noRepite) {
     text += x + ", ";
 }
-alert(text);
+alert("No se repite el " + text);
