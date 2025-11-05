@@ -1,4 +1,4 @@
-
+/*
 function square(num) {
     return num ** 2;
 }
@@ -67,7 +67,7 @@ function suma() {
     }
     return sum;
 }
-
+*/
 function palindromo(palabras) {
     let palindromos = [];
 
@@ -82,6 +82,6 @@ function palindromo(palabras) {
     return palindromos;
 }
 
-let palabras = ["arroz", "anna","zapato", "abba"]
+let palabras = ["arroz", "anna","zapato", "abba", "oso"]
 let ec = palindromo(palabras);
 alert(ec);
