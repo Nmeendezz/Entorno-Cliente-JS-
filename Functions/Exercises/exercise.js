@@ -1,8 +1,10 @@
 /*
+//Ej1
 function square(num) {
     return num ** 2;
 }
 
+//Ej2
 function factorial(num) {
     let res = 1;
     for (let i = 1; i <= num; i++) {
@@ -11,10 +13,12 @@ function factorial(num) {
     return res;
 }
 
+//Ej3
 function temperatureConverter(celsius) {
     return (celsius * 9 / 5) + 32;
 }
 
+//Ej4
 function esPrimo(num) {
     let primo = true;
 
@@ -30,6 +34,7 @@ function esPrimo(num) {
     return primo;
 }
 
+//Ej5
 function vocalsCounter(arg) {
     let word = arg;
     let letters = word.split("");
@@ -45,21 +50,27 @@ function vocalsCounter(arg) {
     return count;
 }
 
+//Ej6
 function ecuacion(a, b, c) {
     let ec1 = (-b - Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
     let ec2 = (-b + Math.sqrt(b ** 2 - 4 * a * c)) / (2 * a);
-    return ec1 + " y " + ec2;
+
+    let arr = [ec1,ec2];
+    return arr;
 }
 
+//Ej7
 function callback(num, callBack) {
     if (num > 10) {
         callBack();
     }
 }
+
 function moreThan10() {
     alert("Es mayor de 10");
 }
 
+//Ej8
 function suma() {
     let sum = 0;
     for (let i = 0; i < arguments.length; i++) {
@@ -67,7 +78,9 @@ function suma() {
     }
     return sum;
 }
+
 */
+//Ej9
 function palindromo(palabras) {
     let palindromos = [];
 
