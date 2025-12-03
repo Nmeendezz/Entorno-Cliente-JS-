@@ -37,7 +37,7 @@ function randomNumber(n1, n2){
 let random = randomNumber(1, 8);
 alert(random);
 
-*/
+
 //Ej5
 
 class Punto {
@@ -53,7 +53,25 @@ function distance (punto1, punto2){
 }
 
 
-let punto1 = new Punto(1, 5);
-let punto2 = new Punto(5, 8);
+let punto1 = new Punto(4, 6);
+let punto2 = new Punto(1, 2);
 let distancia = distance(punto1, punto2);
 alert(distancia);
+*/
+//Ej6
+const today = new Date();
+const dias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+let bornDate = prompt("Ingrese su fecha de nacimiento (DD/MM/AAAA)");
+bornDate = bornDate.split("/");
+let bornDay = bornDate[0];
+let bornMonth = bornDate[1];
+let bornYear = bornDate[2];
+
+let date = new Date(bornYear, bornMonth - 1, bornDay);
+
+alert("Nació un " + dias[date.getDay()]);
+
+
+alert("Tiene " + (today.getFullYear() - date.getFullYear()) + " años, " + ((today.getMonth() - date.getMonth()) + 1) + " meses y " + (today.getDate() - date.getDate()) + " dias");
