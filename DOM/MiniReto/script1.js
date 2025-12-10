@@ -48,6 +48,12 @@ console.log(location.pathname);
 
 
 let intervalo = setTimeout(() => {
-    confirm("Quieres cambiar a la pagina 2???");
-    window.location.href = "file:///home/diurno/EntornoClienteJS/DOM/MiniReto/index2.html";
+    let ask = confirm("Quieres cambiar a la pagina 2???");
+    if (!ask) {
+        clearTimeout(ask);
+        alert("Se queda en esta pagina (pagina 1)");
+    } else {
+        location.assign("file:///home/diurno/EntornoClienteJS/DOM/MiniReto/index2.html");
+
+    }
 }, 5000);
