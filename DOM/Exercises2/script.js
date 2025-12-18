@@ -27,7 +27,7 @@ let interval = setInterval(() => {
     nuevoP.textContent = cont;    
     cont++;
 }, 3000);
-*/
+
 //Ej4
 let option;
 do{
@@ -47,6 +47,25 @@ do{
         nuevoLi.textContent = contenido;
         ol.appendChild(nuevoLi);
     } else if(option == 3){
-        alert("Saliendo")
+        alert("Saliendo...")
     }
 } while(option != 3);
+
+*/
+//Ej5
+let ol = document.querySelector('ol');
+let lists = document.getElementsByTagName('li');
+let hermanoAnterior;
+let hermanoSiguiente;
+for(let i = 0; i < lists.length; i++){
+    if(i == 1){
+        hermanoAnterior = lists[i - 1].textContent;
+        hermanoSiguiente = lists[i + 1].textContent;
+    }
+}
+console.log(hermanoAnterior);
+console.log(hermanoSiguiente);
+//let primerLi = document.querySelectorAll('li')[0];
+//let ultimoLi = document.querySelectorAll('li')[2];
+//console.log(primerLi.textContent);
+//console.log(ultimoLi.textContent);
