@@ -12,12 +12,18 @@ function getCookie(nombre) {
 let tema = getCookie("tema");
 
 if (!tema) {
-    res = prompt("Elige tema: claro u oscuro").toLowerCase();
-    if (res === "oscuro") {
-        tema = "oscuro";
+    let res = prompt("Elige tema: claro u oscuro");
+    if (res) {
+        res = res.toLowerCase();
+        if (res === "oscuro") {
+            tema = "oscuro";
+        } else {
+            tema = "claro";
+        }
     } else {
         tema = "claro";
     }
+
     document.cookie = "tema=" + tema + "; max-age=" + (60 * 60 * 24 * 365);
 }
 document.body.className = tema;
