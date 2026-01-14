@@ -7,3 +7,4 @@ boton.addEventListener("click", function () {
 boton.addEventListener("click", (objEvento) => {
     console.log(objEvento);
 });
+
