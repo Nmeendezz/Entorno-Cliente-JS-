@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        #padre {
+            background: #4a90e2;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        #hijo {
+            background: #50e3c2;
+            color: #003;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        #child {
+            background: #f5a623;
+            color: #222;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        #link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            background: #ff4f4f;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        #link:hover {
+            background: #d63c3c;
+            transform: scale(1.05);
+        }
+
+        #sumar {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #6a5acd;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.25s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        #sumar:hover {
+            background: #5848b8;
+            transform: translateY(-2px);
+        }
+
+        #sumar:active {
+            transform: translateY(0);
+            background: #4a3ca0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        Padre
+        <div id="hijo">
+            Hijo
+            <div id="child">
+                Child
+            </div>
+        </div>
+    </div>
+    <a href="https://www.google.com/" id="link">Ir a google</a>
+
+    <h1 id="titulo"></h1>
+    <button id="sumar">Pulsa para sumar uno</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

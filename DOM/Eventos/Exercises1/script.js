@@ -17,7 +17,7 @@ h1.textContent = "Haz pulsado " + cont + " veces";
 boton.addEventListener("click", () => {
     cont++;
     h1.textContent = "Haz pulsado " + cont + " veces";
-})
+});
 
 //Ej4
 const dias = document.getElementById("dias");
