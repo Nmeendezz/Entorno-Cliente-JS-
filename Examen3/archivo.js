@@ -6,10 +6,9 @@ let button = document.getElementById("añadir");
 
 
 button.addEventListener("click", (e) => {
-    if (!tarea) {
+    if (!tarea.value) {
         alert("No puede añadir una tarea vacia");
     } else {
-        e.preventDefault();
         const text = tarea.value;
         const nuevoNodo = document.createElement("li");
         nuevoNodo.textContent = "tarea: " + text;
@@ -17,7 +16,9 @@ button.addEventListener("click", (e) => {
 
         const eliminar = document.createElement("button");
         eliminar.textContent = "Eliminar tarea";
-        lista.appendChild(eliminar);
+
+        nuevoNodo.appendChild(eliminar);
+        lista.appendChild(nuevoNodo);
         eliminar.addEventListener("click", () => {
             lista.removeChild(nuevoNodo);
         });
@@ -47,21 +48,31 @@ function estilos() {
         localStorage.setItem("click", style);
     }
 }
+function enter() {
+    parrafo.style.color = "blue";
+
+}
+function leave() {
+    parrafo.style.color = "black";
+}
 
 parrafo.addEventListener("click", estilos);
+
+parrafo.addEventListener("mouseenter", enter);
+
+parrafo.addEventListener("mouseleave", leave);
 
 if (style) {
     parrafo.style.fontWeight = style;
 }
 
-parrafo.addEventListener("mouseenter", () => {
-    parrafo.style.color = "blue";
-});
 
-parrafo.addEventListener("mouseleave", () => {
-    parrafo.style.color = "black";
-});
 
 desactivar.addEventListener("click", () => {
+    parrafo.removeAttribute("style");
+//    localStorage.removeItem("click");
+
     parrafo.removeEventListener("click", estilos);
+    parrafo.removeEventListener("mouseenter", enter);
+    parrafo.removeEventListener("mouseleave", leave);
 });
