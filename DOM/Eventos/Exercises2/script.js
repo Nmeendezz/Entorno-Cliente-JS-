@@ -1,4 +1,4 @@
-/*
+
 //Ej1
 const padre1 = document.getElementById("padre");
 const hijo1 = document.getElementById("hijo");
@@ -16,7 +16,7 @@ child1.addEventListener("mouseenter", () => {
     // Eventos que no generan propagacion -> mouseenter7mouseleave y focus/blur
     alert("Está encima de child");
 });
-
+/*
 //Ej2
 const padre2 = document.getElementById("padre");
 const hijo2 = document.getElementById("hijo");
@@ -38,7 +38,7 @@ child2.addEventListener("mouseenter", (noPropagado) => {
     noPropagado.stopPropagation();
 
 });
-
+*/
 //Ej3
 const link = document.getElementById("link");
 link.addEventListener("click", (navegar) => {
@@ -46,7 +46,7 @@ link.addEventListener("click", (navegar) => {
     alert("Haz clicado pero no se puede navegar");
     link.textContent = "El enlace ya no redirige";
 })
-*/
+
 
 //Ej4
 
